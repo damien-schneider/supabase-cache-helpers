@@ -1,5 +1,5 @@
 import type { PostgrestQueryBuilder } from '@supabase/postgrest-js';
-import { GetResult } from '@supabase/postgrest-js/dist/cjs/select-query-parser';
+
 import {
   GenericSchema,
   GenericTable,
@@ -13,6 +13,7 @@ import {
   type BuildNormalizedQueryOps,
   buildNormalizedQuery,
 } from './fetch/build-normalized-query';
+import { GetResult } from '@supabase/postgrest-js/dist/cjs/select-query-parser/result';
 
 export type UpsertFetcher<T extends GenericTable, R> = (
   input: T['Insert'][],

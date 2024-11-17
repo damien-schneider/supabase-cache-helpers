@@ -3,7 +3,7 @@ import {
   getTable,
 } from '@supabase-cache-helpers/postgrest-core';
 import { PostgrestQueryBuilder } from '@supabase/postgrest-js';
-import { GetResult } from '@supabase/postgrest-js/dist/cjs/select-query-parser';
+
 import {
   GenericSchema,
   GenericTable,
@@ -13,6 +13,7 @@ import { useMutation } from '@tanstack/react-query';
 import { useUpsertItem } from '../cache';
 import { useQueriesForTableLoader } from '../lib';
 import type { UsePostgrestMutationOpts } from './types';
+import { GetResult } from '@supabase/postgrest-js/dist/cjs/select-query-parser/result';
 
 /**
  * Hook to execute a UPDATE mutation

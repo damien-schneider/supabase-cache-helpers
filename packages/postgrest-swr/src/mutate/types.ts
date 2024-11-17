@@ -5,7 +5,7 @@ import type {
   UpdateFetcherOptions,
   UpsertFetcherOptions,
 } from '@supabase-cache-helpers/postgrest-core';
-import { GetResult } from '@supabase/postgrest-js/dist/cjs/select-query-parser';
+import { GetResult } from '@supabase/postgrest-js/dist/cjs/select-query-parser/result';
 import {
   GenericSchema,
   GenericTable,

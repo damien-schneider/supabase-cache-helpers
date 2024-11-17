@@ -3,7 +3,7 @@ import {
   getTable,
 } from '@supabase-cache-helpers/postgrest-core';
 import type { PostgrestQueryBuilder } from '@supabase/postgrest-js';
-import { GetResult } from '@supabase/postgrest-js/dist/cjs/select-query-parser';
+
 import {
   GenericSchema,
   GenericTable,
@@ -14,6 +14,7 @@ import { useUpsertItem } from '../cache';
 import { useQueriesForTableLoader } from '../lib';
 import { getUserResponse } from './get-user-response';
 import type { UsePostgrestMutationOpts } from './types';
+import { GetResult } from '@supabase/postgrest-js/dist/cjs/select-query-parser/result';
 
 /**
  * Hook to execute a INSERT mutation

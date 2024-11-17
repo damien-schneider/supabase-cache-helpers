@@ -451,8 +451,8 @@ importers:
         specifier: workspace:*
         version: link:../tsconfig
       '@supabase/postgrest-js':
-        specifier: 1.16.1
-        version: 1.16.1
+        specifier: ^1.17.5
+        version: 1.17.5
       '@supabase/supabase-js':
         specifier: 2.45.4
         version: 2.45.4
@@ -494,8 +494,8 @@ importers:
         specifier: workspace:*
         version: link:../tsconfig
       '@supabase/postgrest-js':
-        specifier: 1.16.1
-        version: 1.16.1
+        specifier: ^1.17.5
+        version: 1.17.5
       '@supabase/supabase-js':
         specifier: 2.45.4
         version: 2.45.4
@@ -549,8 +549,8 @@ importers:
         specifier: workspace:*
         version: link:../tsconfig
       '@supabase/postgrest-js':
-        specifier: 1.16.1
-        version: 1.16.1
+        specifier: ^1.17.5
+        version: 1.17.5
       '@supabase/supabase-js':
         specifier: 2.45.4
         version: 2.45.4
@@ -2072,6 +2072,9 @@ packages:
 
   '@supabase/postgrest-js@1.16.1':
     resolution: {integrity: sha512-EOSEZFm5pPuCPGCmLF1VOCS78DfkSz600PBuvBND/IZmMciJ1pmsS3ss6TkB6UkuvTybYiBh7gKOYyxoEO3USA==}
+
+  '@supabase/postgrest-js@1.17.5':
+    resolution: {integrity: sha512-dq04qmKQoz5vH/sfBYvYJSyaNcYzdEkhl01qCFHhmr1c0CwLyVVOpUbfO+viUCBqvA04XrIwzSSp2oR+nBY9+Q==}
 
   '@supabase/realtime-js@2.10.2':
     resolution: {integrity: sha512-qyCQaNg90HmJstsvr2aJNxK2zgoKh9ZZA8oqb7UT2LCh3mj9zpa3Iwu167AuyNxsxrUE8eEJ2yH6wLCij4EApA==}
@@ -7325,6 +7328,10 @@ snapshots:
       whatwg-url: 5.0.0
 
   '@supabase/postgrest-js@1.16.1':
+    dependencies:
+      '@supabase/node-fetch': 2.6.15
+
+  '@supabase/postgrest-js@1.17.5':
     dependencies:
       '@supabase/node-fetch': 2.6.15
 
